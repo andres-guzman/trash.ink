@@ -14,7 +14,7 @@
 <body>
 	<a id="start"></a>
 	<a href="./" id="logo">Trash.ink</a>
-	<a href="#" id="about-open">What is this?</a>
+	<a id="about-open" data-fancybox data-src="#about-modal" href="javascript:;">What is this?</a>
 	<header>		
 		<h1>Write some trash and publish that online. This is an anonymous publishing platform.</h1>		
 	</header>
@@ -55,24 +55,20 @@
 	</main>    
 	
 	<footer>
-		© <?php echo date("Y"); ?> Andres Guzman. Kudos to you if for using this. Just kidding. <a href="#start">Go up</a>		
+		© <?php echo date("Y"); ?> Andres Guzman. Kudos to you for using this. <a href="#start">Go up</a>		
 	</footer>
-
-	<div class="about-modal">
-		<a id="about-close" href="#close"><img src="img/close.svg"></a>
-		<p>Trash.ink is a simple and silly platform for you yell out whatever you want. There are no repercutions because nobdy keeps track of you. It's that simple and it's fun.</p>
+	
+	<div style="display: none;" id="about-modal">
+		<p><span>Trash.ink</span> is a simple and silly platform for you yell out whatever you want. There are no repercutions because nobdy keeps track of you. It's that simple and it's fun.</p>
 	</div>
-
-    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+	
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
     <script src="js/main.js"></script>
-    <script>
-		(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='https://www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-		ga('create','UA-92612244-1','auto');ga('send','pageview');
+	<script>
+		window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+		ga('create','UA-92612244-1','auto');ga('send','pageview')
     </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 </body>
 </html>
