@@ -16,7 +16,7 @@
 	<a href="./" id="logo">Trash.ink</a>
 	<a id="about-open" data-fancybox data-src="#about-modal" href="javascript:;">What is this?</a>
 	<header>		
-		<h1>Write some trash and publish that online. This is an anonymous publishing platform.</h1>		
+		<h1>Write some trash and publish it online. This is an anonymous publishing platform.</h1>		
 	</header>
 
 	<main>
