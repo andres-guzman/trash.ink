@@ -1,6 +1,6 @@
 ﻿/*
     autor: Andres Guzman (andres@camino.bo)
-    date: June, 2017, last update August 2017
+    date: June, 2017, last update Nov 2017
 */
 
 
@@ -514,17 +514,14 @@ footer a:hover {
 
 .fancybox-slide > div {
   display: inline-block;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  position: realative;
   border-width: 0;
   vertical-align: middle;
   text-align: left;
   background-color: #000000;
   overflow: auto;
   box-sizing: border-box;
+  padding: 35px;
 }
 
 .fancybox-slide .fancybox-image-wrap {
