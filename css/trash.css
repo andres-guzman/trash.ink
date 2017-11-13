@@ -1,32 +1,29 @@
 ﻿/*
-    autor: Andres Guzman (andres@camino.bo)
-    date: June, 2017, last update Nov 2017
+    Andres Guzman (andres@camino.bo)
+    Nov 2017
 */
-
 
 /* fonts
 -------------------------------------------------------------------- */
 
 @font-face {
-    font-family: 'Vollkorn Bold';
-    src: url('fonts/vollkorn/vollkorn-bold-webfont.woff2') format('woff2'), url('fonts/vollkorn/vollkorn-bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Montserrat Bold';
+  src: url('fonts/montserratbold/montserrat-bold-webfont.woff2') format('woff2'),
+       url('fonts/montserratbold/montserrat-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
 }
 
 @font-face {
-    font-family: 'Vollkornbold Italic';
-    src: url('fonts/vollkorn/vollkorn-bolditalic-webfont.woff2') format('woff2'), url('fonts/vollkorn/vollkorn-bolditalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Montserrat Light';
+  src: url('fonts/montserratlight/montserrat-light-webfont.woff2') format('woff2'),
+       url('fonts/montserratlight/montserrat-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
 }
 
-@font-face {
-    font-family: 'Motserrat Light';
-    src: url('fonts/montserrat/montserrat-light-webfont.woff2') format('woff2'), url('fonts/montserrat/montserrat-light-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
 
 /* css reset
 -------------------------------------------------------------------- */
@@ -44,308 +41,300 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
+
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-    display: block;
+  display: block;
 }
 
 ol, ul {
-    list-style: none;
+  list-style: none;
 }
 
 blockquote, q {
-    quotes: none;
+  quotes: none;
 }
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-    content: '';
-    content: none;
+  content: '';
+  content: none;
 }
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 a,
 button {
-    outline: none;
+  outline: none;
 }
-
 
 
 /* basic styles
 -------------------------------------------------------------------- */
 
-:root {
-    font-size: 16px;
-}
-
 ::selection {
-    background: #000000;
-    color: #fff;
+  background: #000000;
+  color: #fff;
 }
 
 ::-moz-selection {
-    background: #000000;
-    color: #fff;
+  background: #000000;
+  color: #fff;
 }
 
 body {
-    line-height: 1;
-    background-color: #ffffff;
-}
-
-#logo {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    color: #000000;
-    font: 1.125rem "Vollkornbold Italic", serif;
-    text-decoration: none;
-}
-
-#about-open {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    color: #000000;
-    font: 1.125rem "Vollkorn Bold", serif;
-}
-
-
-#about-close img {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 30px;
-    padding: 15px;
-}
-
-/* header
--------------------------------------------------------------------- */
-
-header {
-    padding-top: 125px;
-    background-size: cover;
-    position: relative;
-    max-width: 720px;
-    margin: 0 auto 86px auto;
-    box-sizing: border-box;
-    margin-bottom: 125px;
-    text-align: center;
-}
-
-h1 {
-    color: #000000;
-    font: 2.75rem "Vollkorn Bold", serif;
-}
-
-h2 {
-    color: #000000;
-    font: 1.125rem "Vollkornbold Italic", serif;
-    margin-bottom: 20px;
-}
-
-#counter {
-    color: #666666;
+  background-color: #f7f8f9;
 }
 
 /* main
 -------------------------------------------------------------------- */
 
 main {
-    max-width: 720px;
-    margin: 0 auto 25px auto;
-    box-sizing: border-box;    
+  position: relative;
+  max-width: 680px;
+  margin: 0 auto 30px auto;
+  box-sizing: border-box;
 }
 
-#error-pages {
-    text-align: center;
+/* header
+-------------------------------------------------------------------- */
+
+header {
+  position: relative;
+  padding: 40px 0;
 }
 
-#error-pages a {
-    color: #161515;
-    font: 1rem "Proxima Nova Regular", sans-serif;
+#logo {
+  width: 70px;
+  display: block;
+  
+}
+
+#logo:hover .logo-word {
+  fill: #354052;
+}
+
+.logo-word {
+  fill: #5045ba;
+  transition: fill 0.35s ease 0s;
+}
+
+#about-open {
+  position: absolute;
+  right: 0;
+  top: 40px;
+  color: #8d909f;
+  font: 13px "Montserrat Light", sans-serif;
+  text-decoration: none;
 }
 
 /* user input
 -------------------------------------------------------------------- */
 
 #user-input {
-    margin-bottom: 30px;
+  background-color: #ffffff;
+  border: 1px solid #e0e1e2;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+  padding: 30px;
+}
+
+h2 {
+  color: #354052;
+  font: 16px "Montserrat Bold", sans-serif;
+  margin-bottom: 6px;
+}
+
+#counter-wrapper {
+  color: #8d909f;
+  font: 13px "Montserrat Light", sans-serif;
+  margin-bottom: 45px;
 }
 
 #user-input:after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 #user-input #name {
-    display: none;
-}
-
-#user-input #name:focus {
-    background-color: #ffffff;
+  display: none;
 }
 
 #user-input #COMMENT {
-    width: 100%;
-    height: 30px;
-    padding-top: 8px;
-    color: #161515;
-    font: 0.875rem "Montserrat Light", sans-serif;
-    border: 0;
-    outline: 0;
-    background-color: transparent;
-    border-bottom: 1px solid #000000;    
-    box-sizing: border-box;
-    margin-bottom: 10px;
-    resize: none; 
-    transition: all 0.55s ease 0s;
+  width: 100%;
+  height: 30px;
+  padding-top: 8px;
+  color: #161515;
+  font: 13px "Montserrat Light", sans-serif;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  border-bottom: 1px solid #e3e4e5;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  resize: none; 
+  transition: all 0.35s ease 0s;
 }
 
 #user-input #COMMENT:focus {
-    background-color: #ffffff;
-    height: 100px;
+  background-color: #ffffff;
+  height: 45px;
+  border-bottom-color: #000000;
 }
 
 textarea::placeholder {
-    color: #000000;
-    font: 700 italic 11px Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
+  color: #000000;
+  font: 13px "Montserrat Light", sans-serif;
 }
 
-#user-input #submit {
-    display: inline-block;
-    color: #161515;
-    background-color: #ffffff;
-    font: bolder 0.8rem "Montserrat Light", sans-serif;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    width: 160px;
-    height: 45px;
-    margin: 0 auto;
-    border: 1px solid #000000;
-    border-radius: 23px;
-    cursor: pointer;
-    box-sizing: border-box;
-    transition: all 0.35s ease 0s;
-    float: right;
+#submit {
+  float: right;
+  display: block;
+  color: #ffffff;
+  background-color: #5045ba;
+  width: 120px;
+  height: 33px;
+  font: 11px "Montserrat Light", sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 0.35s ease 0s;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 #user-input #submit:hover {
-    color: #ffffff;
-    background-color: #161515;
+  color: #ffffff;
+  background-color: #161515;
 }
 
+#cancel {
+  float: right;
+  height: 37px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-right: 15px;
+  color: #8d909f;
+  display: block;
+  width: 54px;
+  font: 13px/38px "Montserrat Light", sans-serif;
+  text-decoration: none;
+  text-align: center;
+}
 
-/* user comments
+/* user comments (display)
 -------------------------------------------------------------------- */
 
+#user-comments {
+  background-color: #ffffff;
+  border: 1px solid #e0e1e2;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+}
+
+#user-comments > h2 {
+  padding: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #e3e4e5;
+}
+
+#display {
+  padding: 0 30px;
+}
+
 #display .comment-window:last-of-type {
-    margin-bottom: 0;
+  border-bottom: none;
+  padding-bottom: 0;
 }
 
 .comment-window {
-    background-color: #000000;
-    padding: 40px 20px 60px 20px;
-    margin-bottom: 8px;
-    transition: all 0.35s ease 0s;
-}
-
-.comment-window:hover {
-    background-color: #ffffff;
-}
-
-.comment-window:hover .comment-body {
-    color: #000000;
-}
-
-.comment-window:hover .comment-date {
-    color: rgba(0, 0, 0, 0.175);
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #e3e4e5;
 }
 
 .comment-postedby {
-    display: none;
+  display: none;
 }
 
 .comment-body {
-    color: #ffffff;
-    font: 0.875rem "Montserrat Light", sans-serif;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    hyphens: auto;
-    margin-bottom: 4px;
-    white-space: pre-line;
-    transition: all 0.35s ease 0s;
+  color: #000000;
+  font: 13px "Montserrat Light", sans-serif;
+  margin-bottom: 6px;
+  /* white-space: pre-line; */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  transition: all 0.35s ease 0s;
+}
+
+.comment-body:hover {
+  padding: 7px;
+  color: #ffffff;
+  background-color: #000000;
 }
 
 .comment-date {
-    color: rgba(255, 255, 255, 0.15);
-    font: 0.7rem "Montserrat Light", sans-serif;
-    transition: all 0.35s ease 0s;
+  color: rgba(141, 144, 159, 0.35);
+  font: 11px "Montserrat Light", sans-serif;
 }
 
 
 /* footer
 -------------------------------------------------------------------- */
 
-footer:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
 footer {
-    border-top: 1px solid #000000;
-    max-width: 720px;
-    padding-top: 20px;
-    color: #000000;
-    font: 0.75rem "Vollkorn Bold", sans-serif;
-    margin: 0 auto 20px auto;
+  color: #8d909f;
+  font: 13px "Montserrat Light", sans-serif;
 }
 
 footer a {
-    color: #000000;
-    font-family: "Vollkorn Bold", sans-serif;
-    text-decoration: underline;
-    transition: color 0.35s ease 0s;
-    float: right;
+  color: #8d909f;
+  float: right;
 }
 
-footer a:hover {
-    color: rgba(22, 21, 21, 1);
-}
 
 
 /* about modal
 -------------------------------------------------------------------- */
 
+.about-modal-wrapper {
+  max-width: 640px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+  margin: 0 auto;
+}
+
 #about-modal p {
-    max-width: 720px;
-    height: 110px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin-left: -360px;
-    margin-top: -55px;
-    color: #ffffff;
-    font: 1.45rem/1.45 "Vollkorn Bold", sans-serif;
+  box-sizing: border-box;
+  color: #ffffff;
+  font: 14px/20px "Montserrat Light", sans-serif;
+  text-align: left;
+  margin-bottom: 30px;
 }
 
 #about-modal p span {
-    color: #7B23E0;
+  color: #7B23E0;
+}
+
+#about-modal p a {
+color: #ffffff;
 }
 
 
@@ -514,14 +503,17 @@ footer a:hover {
 
 .fancybox-slide > div {
   display: inline-block;
-  position: realative;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   border-width: 0;
   vertical-align: middle;
   text-align: left;
-  background-color: #000000;
+  background-color: #0e0e0f;
   overflow: auto;
   box-sizing: border-box;
-  padding: 35px;
 }
 
 .fancybox-slide .fancybox-image-wrap {
@@ -633,6 +625,7 @@ footer a:hover {
 .fancybox-close-small:after {
   content: '×';
   position: absolute;
+  outline: none;
   top: 5px;
   right: 5px;
   width: 30px;
@@ -1100,32 +1093,16 @@ footer a:hover {
   .fancybox-thumbs > ul > li.fancybox-thumbs-active:before {
     opacity: 1; } }
 
-
-
+    
 /* media queries
--------------------------------------------------------------------- */
-@media screen and (max-width: 760px) {
-    header {
-        padding-top: 60px;
-        padding-left: 20px;
-        padding-right: 20px;
-        margin-bottom: 40px;
-    }
+--------------------------------------------------------------------------*/
 
-    header h1 {
-        font-size: 1.25rem;
-    }
+@media only screen and (max-width: 660px) {
+  body {
+    padding: 0 20px;
+  }
 
-    main {
-        padding: 20px 20px;
-    }
-
-    footer {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    footer span {
-        display: none;
-    }
+  .about-modal-wrapper {
+    padding: 40px;
+  }
 }
