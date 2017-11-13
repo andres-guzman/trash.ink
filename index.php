@@ -1,74 +1,149 @@
-﻿<?php include 'config.php'; ?>
+<?php include 'config.php'; ?>
 <!doctype html>
-<html class="no-js" lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>trash.ink</title>
-    <meta name="description" content="Write some trash and publish that online.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-	<link rel="icon" type="image/png" href="favicon.png">
-    <link rel="stylesheet" href="css/trash.css">
-</head>
-<body>
-	<a id="start"></a>
-	<a href="./" id="logo">Trash.ink</a>
-	<a id="about-open" data-fancybox data-src="#about-modal" href="javascript:;">What is this?</a>
-	<header>		
-		<h1>Write some trash and publish it online. This is an anonymous publishing platform.</h1>		
-	</header>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>trash.ink</title>
+        <meta name="description" content="Write some trash and publish that online.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="icon.png">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" href="favicon.png">
+        <link rel="stylesheet" href="css/trash.css">
+    </head>
+    <body>
+        <a id="start"></a>
+        <main>
+            <header>
+                <h1>
+                    <a id="logo" href="./">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 777 163.8" style="enable-background:new 0 0 777 163.8;" xml:space="preserve">
+                            <g>
+                                <path class="logo-word" d="M43,117c-1.8,7.9-2.7,13.7-2.7,17.6c0,6.5,2.1,9.7,6.3,9.7c1.8,0,3.7-0.6,5.7-1.7c2-1.1,3.9-2.6,5.5-4.4
+                                c1.1,1.3,2.1,2.9,3,4.9c0.8,2,1.4,3.9,1.6,5.6c-2.9,3.6-7.2,6.6-12.8,9.2c-5.6,2.5-11,3.8-16.2,3.8c-14.5,0-21.8-7.9-21.8-23.7
+                                c0-5.7,0.8-12.1,2.5-19.1l7.3-31.1c-5.1-1.1-9.6-1.7-13.6-1.7c0-5.2,0.8-9.1,2.3-11.6h14.5l0.4-1.9c0.3-1.4,0.6-3.1,1.1-5
+                                c0.3-1.1,0.8-3.9,1.7-8.3c0.9-4.4,1.5-8.2,1.7-11.5c4.1-0.5,8.2-1.3,12.4-2.5c4.2-1.1,7.6-2.4,10.1-3.6c1.9,0.5,3.2,1.5,4,2.9
+                                c0.8,1.4,1.1,3.3,1.1,5.7c0,3.4-1.1,9.8-3.2,19.1l-1.1,5.2h18.9c0,5.6-0.5,9.6-1.5,12c-8.3,0-15.1,0.7-20.6,2.1L43,117z"/>
+                                <path class="logo-word" d="M117.2,79.8c0,0.6-0.1,2.1-0.4,4.4c-0.5,3.3-1.5,7.4-3.1,12.3c-1.5,4.9-3.4,9.7-5.5,14.4h0.4l4.6-10.1
+                                c4.2-9,9.1-16.3,14.8-21.8c5.7-5.5,11.8-8.2,18.4-8.2c3.9,0,7.3,1,10.1,2.9c-1.7,4.6-3,9.7-4,15.5c-1,5.7-1.7,11.1-1.9,16.2
+                                c-4.6,2-9.8,2.9-15.7,2.5c0.1-0.6,0.2-1.5,0.2-2.5c0-2.2-0.4-3.9-1.2-5.2c-0.8-1.3-1.9-1.9-3.2-1.9c-3.2,0-6.9,3.6-11.1,10.9
+                                c-2.4,4.2-4.8,9.7-7.2,16.5c-2.4,6.8-4.2,14-5.6,21.5l-2.3,12.8H76.4l9.9-52.5c1-5.1,1.5-8.7,1.5-10.9c0-2.8-0.8-4.6-2.4-5.4
+                                c-1.6-0.8-4.6-1.2-8.9-1.2c0-4.5,0.6-8.2,1.9-11.3c5.5-0.3,11.2-1.1,17.2-2.6c6-1.5,11.5-3.2,16.4-5.3
+                                C115.5,72.5,117.2,75.5,117.2,79.8z"/>
+                                <path class="logo-word" d="M250.9,144.2c1,1.8,1.6,3.6,1.8,5.2c-7.9,8.1-16.7,12.2-26.3,12.2c-5.6,0-9.7-1.6-12.2-4.7
+                                c-2.5-3.1-3.8-7-3.8-11.7c0-2.4,0.3-4.9,1-7.4c0.8-3.1,2.4-7.8,4.8-14.3h-0.6c-4.2,12-9.6,21.3-16.3,28.1
+                                c-6.7,6.7-14.2,10.1-22.4,10.1c-7.5,0-13-2.5-16.5-7.5c-3.5-5-5.2-11.7-5.2-20.1c0-5.1,0.6-10.4,1.7-15.8
+                                c2.8-14,8.9-25.4,18.3-34.2c9.4-8.8,21.6-13.2,36.7-13.2c6.7,0,12.4,0.9,17,2.7c6.6-0.6,12-1.5,16.2-2.7c1.4,0.9,2.4,2,3.2,3.3
+                                c0.7,1.3,1,3.1,1,5.3c0,2.3-0.4,5.3-1.1,9l-9.2,39.5c-1.3,5.6-1.9,9.7-1.9,12.2c0,1.5,0.2,2.5,0.7,3.1c0.4,0.5,1.2,0.8,2.2,0.8
+                                c1.1,0,2.3-0.3,3.5-1c1.2-0.6,2.7-1.7,4.5-3.2C248.9,140.9,250,142.4,250.9,144.2z M200,136.2c3.1-3,6.3-7.8,9.4-14.5
+                                c3.2-6.7,6-15.3,8.4-25.9l2.5-10.7c-3.4-1.4-7.3-2.1-11.5-2.1c-5.9,0-10.5,2.5-14,7.3c-3.5,4.9-6.2,11.7-8.1,20.5
+                                c-1.4,7-2.1,12.6-2.1,16.8c0,8.7,2.4,13,7.1,13C194.1,140.7,196.8,139.2,200,136.2z"/>
+                                <path class="logo-word" d="M325,72.7c5.5,1.3,10.1,2.9,13.6,4.8c-2.2,6.6-3.4,14.6-3.6,23.9c-3.1,1.5-6.9,2.3-11.6,2.3l-3.4-0.2
+                                c-0.3-14-4.6-21-13-21c-5.5,0-8.6,2.1-9.4,6.3c-0.1,0.5-0.2,1.2-0.2,2.1c0,2.8,1.1,5.4,3.3,7.7c2.2,2.4,5.6,5.3,10,8.7
+                                c6.2,4.8,11,9.3,14.4,13.5c3.4,4.1,5.1,9.1,5.1,14.8c0,1.7-0.2,3.4-0.6,5.2c-1.5,7.6-5.4,13-11.5,16.2c-6.2,3.2-15.4,4.8-27.6,4.8
+                                c-6.9,0-13-0.7-18.5-2.1c-5.5-1.4-10-3.2-13.6-5.5c2.4-7,3.8-14.9,4-23.7c3.3-1.3,7.1-1.9,11.3-1.9c1.8,0,3.1,0.1,4,0.2
+                                c-0.1,6.9,1,12.1,3.2,15.6c2.3,3.5,5.9,5.2,10.9,5.2c3.2,0,5.6-0.7,7.3-2.1c1.7-1.4,2.5-3.2,2.5-5.3c0-2.4-1-4.7-3-7
+                                c-2-2.2-5.1-5.1-9.3-8.5c-6.2-5.1-11-9.8-14.3-14c-3.3-4.3-5-9.3-5-15.2c0-1.7,0.2-3.4,0.6-5.3c1.4-7.5,5.3-12.9,11.8-16.2
+                                c6.5-3.3,15.2-5,26.2-5C314,70.8,319.5,71.5,325,72.7z"/>
+                                <path class="logo-word" d="M445.1,144.3c1,1.8,1.6,3.5,1.8,5.2c-8.1,8.1-17.2,12.2-27.1,12.2c-6.2,0-10.7-1.4-13.3-4.1
+                                c-2.6-2.7-3.9-6.8-3.9-12.1c0-3.8,0.8-9.4,2.3-16.6l3.8-17c1-4.2,1.5-8,1.5-11.5c0-5.2-1.7-7.8-5-7.8c-3.1,0-6.6,2-10.5,5.9
+                                c-3.9,3.9-7.7,9.7-11.3,17.4c-3.6,7.6-6.3,16.7-8.2,27.1l-3.1,17H344l17.4-98.9c0.9-5.6,1.3-9.2,1.3-10.9c0-2.7-0.8-4.5-2.3-5.3
+                                c-1.5-0.9-4.5-1.3-9-1.3c0-4.5,0.6-8.2,1.9-11.3c6.1-0.4,12.3-1.3,18.7-2.7c6.4-1.4,12-3.1,17-5.2c1.8,1.1,3.1,2.5,3.9,3.9
+                                c0.8,1.5,1.2,3.3,1.2,5.6c0,1.5-0.2,3.2-0.6,5.2c-3.8,21-6.7,35.8-8.7,44.5c-2,8.7-4.3,17.3-7,26h0.4l4.2-9
+                                c2.3-4.8,5.5-9.5,9.6-14.1c4.1-4.6,8.8-8.3,13.9-11.3c5.2-2.9,10.3-4.4,15.6-4.4c5.5,0,10,1.8,13.5,5.3c3.5,3.5,5.3,9.1,5.3,16.7
+                                c0,4.1-0.7,9.2-2.1,15.5l-4.6,19.3c-1.7,7-2.5,11.5-2.5,13.6c0,1.1,0.2,1.9,0.6,2.3s1,0.6,1.9,0.6c2,0,4.8-1.4,8.2-4.2
+                                C443.1,141,444.1,142.5,445.1,144.3z"/>
+                                <path class="logo-word" d="M460.4,157.8c-3.1-2.7-4.6-6.5-4.6-11.4c0-5.9,1.7-10.4,5-13.7c3.3-3.3,8-5,14.1-5c4.5,0,8.2,1.4,11.2,4.2
+                                c3,2.8,4.5,6.6,4.5,11.3c0,5.7-1.5,10.3-4.6,13.7c-3.1,3.4-7.4,5.1-13.2,5.1C467.6,161.9,463.5,160.5,460.4,157.8z"/>
+                                <path class="logo-word" d="M510.1,144.5c0-3.9,0.7-8.7,2.1-14.3l5.5-21.8c1.5-6.4,2.3-10.4,2.3-12.2c0-2.5-0.8-4.2-2.5-5.1
+                                c-1.7-0.8-4.6-1.2-8.8-1.2c0-4.5,0.6-8.2,1.9-11.3c5.6-0.3,11.3-1.1,17.1-2.6c5.8-1.5,11-3.2,15.7-5.3c4.8,2.2,7.3,6.4,7.3,12.6
+                                c0,2.4-0.4,5.5-1.1,9.2l-8.6,36.1c-1.3,5.2-1.9,9-1.9,11.5c0,1.4,0.2,2.4,0.7,2.9c0.4,0.5,1.1,0.8,2,0.8c2.2,0,4.8-1.3,7.8-4
+                                c1.1,1,2.2,2.5,3.2,4.3c1,1.8,1.6,3.7,1.8,5.4c-3.9,4.1-8.2,7.1-12.9,9.2c-4.6,2-9.3,3.1-14,3.1C515.9,161.7,510.1,156,510.1,144.5
+                                z M528.4,53.6c-2.3-2.2-3.4-5.1-3.4-8.8c0-5.3,1.7-9.5,5.2-12.6c3.4-3.1,8-4.6,13.7-4.6c3.9,0,7.1,1.1,9.5,3.3
+                                c2.4,2.2,3.6,5.2,3.6,8.9c0,0.6-0.1,1.7-0.4,3.2c-0.8,4.5-2.8,7.9-6,10.2c-3.2,2.4-7.5,3.5-12.9,3.5
+                                C533.8,56.9,530.7,55.8,528.4,53.6z"/>
+                                <path class="logo-word" d="M667.7,144.3c1,1.8,1.6,3.5,1.8,5.2c-8.1,8.1-17.2,12.2-27.1,12.2c-6.2,0-10.7-1.4-13.3-4.1
+                                c-2.6-2.7-3.9-6.8-3.9-12.1c0-3.8,0.8-9.4,2.3-16.6l3.8-17c1-4.2,1.5-8,1.5-11.5c0-5.2-1.7-7.8-5-7.8c-3.1,0-6.6,2-10.6,6.1
+                                c-4,4.1-7.8,10-11.4,17.8c-3.6,7.8-6.3,16.8-8.2,27.1l-3.1,16.4h-28.3l9.9-52.5c0.9-4.5,1.3-8,1.3-10.7c0-2.8-0.8-4.6-2.4-5.5
+                                c-1.6-0.9-4.6-1.3-8.9-1.3c0-4.8,0.6-8.6,1.9-11.3c5.6-0.1,11.7-1,18.4-2.5s12.4-3.3,17.3-5.3c3.7,1.7,5.5,4.7,5.5,9.2
+                                c0,0.6-0.1,1.7-0.4,3.2c-0.9,4.6-1.9,8.6-3,12.1c-1.1,3.5-2.5,7.3-4.3,11.5v0.6l3.2-6.9c3.8-7.9,9.4-14.8,16.8-20.8
+                                c7.4-6,14.8-9,22.3-9c5.5,0,10,1.8,13.5,5.3c3.5,3.5,5.3,9.1,5.3,16.7c0,4.1-0.7,9.2-2.1,15.5l-4.6,19.3c-1.7,7-2.5,11.5-2.5,13.6
+                                c0,1.1,0.2,1.9,0.6,2.3s1,0.6,1.9,0.6c2,0,4.8-1.4,8.2-4.2C665.7,141,666.7,142.5,667.7,144.3z"/>
+                                <path class="logo-word" d="M762.7,108c-5.5,4.4-13.3,8.4-23.4,11.9c3.1,3.2,6.6,8.2,10.7,15.1c1.9,3.2,3.4,5.3,4.6,6.4
+                                c1.1,1.1,2.5,1.6,4.2,1.6c2.2,0,4.4-1.1,6.7-3.2c1.3,1,2.4,2.5,3.4,4.3c1,1.8,1.6,3.7,1.7,5.4c-8.1,8.1-16.8,12.2-26,12.2
+                                c-5.7,0-10.1-1.3-13-4c-2.9-2.7-5.7-6.8-8.2-12.4c-3.1-6.7-6.6-13-10.7-18.9l-1.1,6.9l-5,26.7h-28.3l17.4-98.9
+                                c0.9-5.6,1.3-9.2,1.3-10.7c0-2.9-0.8-4.8-2.3-5.6c-1.5-0.8-4.5-1.2-9-1.2c0-4.5,0.6-8.2,1.9-11.3c6.1-0.4,12.3-1.3,18.7-2.7
+                                c6.4-1.4,12-3.1,17-5.2c1.9,1.4,3.2,2.8,4,4.1s1.1,3,1.1,5.1c0,1.5-0.2,3.4-0.6,5.5c-3.2,17.6-5.6,29.8-7.2,36.8
+                                c-1.6,7-4,15.5-7.2,25.4h0.2c4.5-9,10.2-16.4,17.2-22c7-5.7,14.6-8.5,22.9-8.5c5.7,0,10.3,1.5,13.8,4.6c3.5,3.1,5.3,7.1,5.3,12.2
+                                c0,0.8-0.1,2.2-0.4,4.2C771.6,98.2,768.3,103.6,762.7,108z M746,96c0-2.2-0.6-3.9-1.8-5.2c-1.2-1.3-3-1.9-5.3-1.9
+                                c-2.7,0-5.7,1.3-9.1,3.8c-3.4,2.5-6.6,6.1-9.5,10.7c-3,4.6-5.3,9.7-7,15.5c10.3-2,18-4.6,23.1-7.6c5.1-3.1,8.1-7.2,9.2-12.4
+                                C745.9,97.6,746,96.7,746,96z"/>
+                                </g>
+                            </svg>
+                        </a>
+                    </h1>
+                <a id="about-open" data-fancybox="" data-src="#about-modal" href="javascript:;">What is this?</a>
+            </header>
 
-	<main>
-		<div id="user-input">
-			<input rows="6" id="name" name="name" placeholder="Name" type="text" value="" maxlenght="130">	
-			<textarea rows="11" name="comment" id="COMMENT" placeholder="Write..."></textarea>		
-			<button id="submit" type="submit">Publish</button>
-			<div id="counter"></div>
-		</div>
+            <section id="user-input">
+                <h2>Write something, anything and publish it online:</h2>
+                <div id="counter-wrapper">
+                    Characters remaining
+                    <span id="counter"></span>
+                </div>
+                <input rows="6" id="name" name="name" placeholder="Name" value="" maxlenght="130" type="text">
+                <textarea rows="11" name="comment" id="COMMENT" placeholder="Write..."><?php echo htmlspecialchars($_POST['COMMENT']);?></textarea>
+                <button id="submit" type="submit">Publish</button><a id="cancel" href="../">Cancel</a>
+            </section>
 
-		<section id="display">
-			<h2>Latest trash published:</h2>
-			<?php
-			$sqlQuery = "SELECT * FROM  `tblcomment` order by ID desc";
-			$result = mysql_query($sqlQuery) or die(mysql_error());
-			while ($row = mysql_fetch_array($result)) {
+            <section id="user-comments">
+                <h2>Activity:</h2>
+                <div id="display">                                
+                    <?php
+                        $sqlQuery = "SELECT * FROM  `tblcomment` order by ID desc";
+                        $result = mysql_query($sqlQuery) or die(mysql_error());
+                        while ($row = mysql_fetch_array($result)) {
+                        
+                        echo '<article class="comment-window">
+                            ';
+                            echo '<div class="comment-postedby">Posted by: ' . $row['PERSON'].'</div>';
+                            echo '<div class="comment-body">
+                                ';
+                                echo  $row['COMMENT'];
+                                echo '
+                            </div>';
+                            echo '<div class="comment-date">
+                                ';
+                                echo 'Date: ' . $row['DATEPOSTED'];
+                                echo '
+                            </div>';
+                            echo '
+                        </article>';
+                    }?>
+                </div>
+            </section>
 
-			echo '<article class="comment-window">
-				';
-				echo '<div class="comment-postedby">Posted by: ' . $row['PERSON'].'</div>';
-				echo '<div class="comment-body">
-					';
-					echo  $row['COMMENT'];
-					echo '
-				</div>';
-				echo '<div class="comment-date">
-					';
-					echo 'Date: ' . $row['DATEPOSTED'];
-					echo '
-				</div>';
-				echo '
-			</article>';
-			}
-			?>
-		</section>
-	</main>    
-	
-	<footer>
-		© <?php echo date("Y"); ?> Andres Guzman. Kudos to you for using this. <a href="#start">Go up</a>		
-	</footer>
-	
-	<div style="display: none;" id="about-modal">
-		<p><span>Trash.ink</span> is a simple and silly platform for you yell out whatever you want. There are no repercutions because nobdy keeps track of you. It's that simple and it's fun.</p>
-	</div>
-	
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
-    <script src="js/main.js"></script>
-	<script>
-		window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-		ga('create','UA-92612244-1','auto');ga('send','pageview')
-    </script>
-    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
-</body>
+            <footer>
+                © <?php echo date("Y"); ?> Some rights reserved. Only joking. <a href="#start">Go up</a>		
+            </footer>
+        </main>        
+
+        <div style="display: none;" id="about-modal">
+            <div class="about-modal-wrapper">
+				<p>This is a simple and silly publishing platform for you write something, whatever you want. You simply type something in, hit 'Publish' and it's online. It's anonymous because I don't keep track of you in any form or way.</p>
+            	<p>If you have any ideas or recommendations on how to make this website better, please send me an email at <a href="mailto:andres@camino.bo">andres@camino.bo</a>.</p>
+			</div>            
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+        <script src="js/trash.js"></script>
+
+        <script>
+            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+            ga('create','UA-92612244-1','auto');ga('send','pageview')
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    </body>
 </html>
