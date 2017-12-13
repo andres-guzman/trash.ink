@@ -1,3 +1,3 @@
 # www.trash.ink
 
-write stuff for the people
+www.trash.ink
