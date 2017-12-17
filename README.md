@@ -1,3 +1,3 @@
-# www.trash.ink
+# trash.ink
 
 www.trash.ink
