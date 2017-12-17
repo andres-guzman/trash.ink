@@ -282,7 +282,6 @@ textarea::placeholder {
 }
 
 .comment-body:hover {
-    padding: 4px;
     color: #ffffff;
     background-color: #000000;
 }
