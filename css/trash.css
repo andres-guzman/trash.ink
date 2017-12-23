@@ -506,12 +506,12 @@ footer a {
     border-width: 0;
     vertical-align: middle;
     text-align: left;
-    background-color: #0e0e0f;
+    background-color: #5045ba;
     overflow: auto;
     box-sizing: border-box;
     padding: 35px;
     border-radius: 5px;
-    border: 2px dashed #ffffff;
+    border: 1px dashed #ffffff;
   }
   
   .fancybox-slide .fancybox-image-wrap {
