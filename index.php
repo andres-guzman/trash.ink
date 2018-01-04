@@ -133,7 +133,6 @@
             <div class="about-modal-wrapper">
 				<p>This is a simple and silly publishing platform for you write something, whatever you want. You simply type something in, hit 'Publish' and it's online. It's anonymous because I don't keep track of you in any form or way.</p>
             	<p>If you have any ideas or recommendations on how to make this website better, please send me an email at <a href="mailto:andres@camino.bo">andres@camino.bo</a>.</p>
-                <p>#yellintothevoid</p>
 			</div>            
         </div>
 
