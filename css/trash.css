@@ -311,7 +311,7 @@ footer a {
 -------------------------------------------------------------------- */
 
 .about-modal-wrapper {
-    max-width: 640px;
+    max-width: 600px;
     display: flex;
 	  flex-direction: column;
 	  align-items: center;
@@ -506,11 +506,10 @@ footer a {
     border-width: 0;
     vertical-align: middle;
     text-align: left;
-    background-color: #5045ba;
+    background-color: #18181d;
     overflow: auto;
     box-sizing: border-box;
-    padding: 35px;
-    border-radius: 5px;
+    padding: 45px;
     border: 1px dashed #ffffff;
   }
   
