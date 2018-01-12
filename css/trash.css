@@ -138,6 +138,15 @@ header {
     text-decoration: none;
 }
 
+#notice {
+    color: #354052;
+    font: 13px "Montserrat Light", sans-serif;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    border: 1px dashed #354052;
+}
+
 /* user input
 -------------------------------------------------------------------- */
 
@@ -148,6 +157,7 @@ header {
     margin-bottom: 30px;
     box-sizing: border-box;
     padding: 30px;
+    display: none;
 }
 
 h2 {

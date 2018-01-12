@@ -86,6 +86,10 @@
                 <a id="about-open" data-fancybox="" data-src="#about-modal" href="javascript:;">What is this?</a>
             </header>
 
+            <section id="notice">
+                <p>As noticed by the last guy -or girl- that commented, this simple platform to post anonymous comments is vulnerable to SQL injection attacks that could land me in a world of hurt. What a noob, right? Therefore I have decided to disable this entirely until I (a simple front-end developer) find a way to fix this. Thank you so much for visiting and thank you x100 to the weirdos who actually used this. I'll be back.</p>
+            </section>
+
             <section id="user-input">
                 <h2>Write something, anything and publish it online:</h2>
                 <div id="counter-wrapper">

@@ -1,8 +1,7 @@
 // Avoid `console` errors in browsers that lack a console.
-
-(function () {
+(function() {
     var method;
-    var noop = function () { };
+    var noop = function () {};
     var methods = [
         'assert', 'clear', 'count', 'debug', 'dir', 'dirxml', 'error',
         'exception', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log',
@@ -25,55 +24,51 @@
 // smooht scroll
 
 $('a[href*="#"]')
-    .not('[href="#"]')
-    .not('[href="#0"]')
-    .click(function (event) {
-        if (
-            location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
-            &&
-            location.hostname == this.hostname
-        ) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-            if (target.length) {
-                event.preventDefault();
-                $('html, body').animate({
-                    scrollTop: target.offset().top
-                }, 1000, function () {
-                    var $target = $(target);
+.not('[href="#"]')
+.not('[href="#0"]')
+.click(function (event) {
+    if (
+        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+        &&
+        location.hostname == this.hostname
+    ) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        if (target.length) {
+            event.preventDefault();
+            $('html, body').animate({
+                scrollTop: target.offset().top
+            }, 1000, function () {
+                var $target = $(target);
+                $target.focus();
+                if ($target.is(":focus")) {
+                    return false;
+                } else {
+                    $target.attr('tabindex', '-1');
                     $target.focus();
-                    if ($target.is(":focus")) {
-                        return false;
-                    } else {
-                        $target.attr('tabindex', '-1');
-                        $target.focus();
-                    };
-                });
-            }
+                };
+            });
         }
-    });
-
+    }
+});
 
 // form
-
+/*
 $(document).on("click", "#submit", function () {
-    
     //$("article").fadeIn("slow");
-    
     var name = document.getElementById('name').value;
     var COMMENT = document.getElementById('COMMENT').value;
 
-    /*
-    if (name == "") {
+    
+    if (name == "") { //comment this line out
         return false;
-    };*/
+    };
 
-    /*
+
     if (COMMENT == "") {
         return false;
     };
-    */
-    
+
     $.ajax({    //create an ajax request to load_page.php
         type: "POST",
         url: "process.php",
@@ -86,9 +81,10 @@ $(document).on("click", "#submit", function () {
         }
      });
 });
+*/
 
 // textarea maxlenght
-/*
+
 $('textarea').keypress(function (e) {
     var tval = $('textarea').val(),
         tlength = tval.length,
@@ -98,22 +94,7 @@ $('textarea').keypress(function (e) {
     if (remain <= 0 && e.which !== 0 && e.charCode !== 0) {
         $('textarea').val((tval).substring(0, tlength - 1))
     }
-})*/
-
-
-// fullscreen modal
-/*
-$('#about-open').click(function (e) {
-    $('.about-modal').addClass('modal-active');
-    $('body').addClass('overflow-body');
-    e.preventDefault();
-});
-
-$('#about-close').click(function (e) {
-    $('.about-modal').removeClass('modal-active');
-    $('body').removeClass('overflow-body');
-    e.preventDefault();
-}*/
+})
 
 // ==================================================
 // fancyBox v3.1.28
