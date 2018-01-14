@@ -93,7 +93,7 @@ button {
 }
 
 body {
-    background-color: #f0f1f2;
+    background-color: #edeeef;
 }
 
 /* main
@@ -157,7 +157,7 @@ header {
 
 #user-input {
     background-color: #ffffff;
-    border: 1px solid #e0e1e2;
+    border: 1px solid #dbdcdd;
     border-radius: 5px;
     margin-bottom: 30px;
     box-sizing: border-box;
@@ -254,7 +254,7 @@ textarea::placeholder {
 
 #user-comments {
     background-color: #ffffff;
-    border: 1px solid #e0e1e2;
+    border: 1px solid #dbdcdd;
     border-radius: 5px;
     margin-bottom: 30px;
     box-sizing: border-box;
