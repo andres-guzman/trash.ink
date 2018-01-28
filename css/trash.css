@@ -112,7 +112,7 @@ body {
 
 #intro { 
   background-color: #141317;
-  max-width: 545px;
+  max-width: 575px;
   box-sizing: border-box;
   position: fixed;
   height: 100%;
@@ -167,7 +167,7 @@ body {
 
 main {
     position: relative;
-    margin: 30px auto 30px 545px;
+    margin: 30px auto 30px 575px;
     box-sizing: border-box;
 }
 
