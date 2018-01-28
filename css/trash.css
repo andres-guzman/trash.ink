@@ -25,6 +25,16 @@
 }
 
 
+@font-face {
+  font-family: 'Skinny';
+  src: url('fonts/skinny/skinny-regular-webfont.woff2') format('woff2'),
+       url('fonts/skinny/skinny-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
 /* css reset
 -------------------------------------------------------------------- */
 
@@ -96,61 +106,89 @@ body {
     background-color: #edeeef;
 }
 
+
+/* intro
+-------------------------------------------------------------------- */
+
+#intro { 
+  background-color: #141317;
+  max-width: 545px;
+  box-sizing: border-box;
+  position: fixed;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 120px;
+  top: 0;
+  left: 0;
+}
+
+#intro-innards #intro-logo {
+  display: block;
+  max-width: 160px;
+  margin: 0 auto 30px auto;
+}
+
+#intro-logo:hover .st0 {
+  stroke-width: 4px;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 760;
+}
+
+.st0 {
+  fill:#ffffff;
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -474;
+  stroke-width: 2px;
+  stroke: #ffffff;
+  transition: stroke-width 0.9s, stroke-dashoffset 0.9s, stroke-dasharray 0.9s;
+}
+
+.st1 {
+  fill:#141317;
+}
+
+#intro-innards p {
+  text-align: center;
+  color: #ffffff;
+  font: 27px "Skinny", sans-serif;
+  margin-bottom: 30px;
+}
+
+#about-open {
+  color: #ffffff;
+  text-decoration: underline;
+  transition: color 0.35s ease 0s;
+}
+
 /* main
 -------------------------------------------------------------------- */
 
 main {
     position: relative;
-    max-width: 680px;
-    margin: 0 auto 30px auto;
+    margin: 30px auto 30px 545px;
     box-sizing: border-box;
 }
 
 /* header
 -------------------------------------------------------------------- */
 
-header {
-    position: relative;
-    padding: 40px 0;
-}
-
-#logo {
-    width: 77px;
-    display: block;
-    
-}
-
-#logo:hover .logo-word {
-    fill: #354052;
-}
-
-.logo-word {
-    fill: #5045ba;
-    transition: fill 0.35s ease 0s;
-}
-
-#about-open {
-    position: absolute;
-    right: 0;
-    top: 40px;
-    color: #8d909f;
-    font: 13px "Montserrat Light", sans-serif;
-    text-decoration: none;
-    transition: color 0.35s ease 0s;
-}
 
 #about-open:hover {
-  color: #354052;
+  color: #5045ba;
 }
 
 #notice {
     color: #354052;
     font: 13px/20px "Montserrat Light", sans-serif;
     padding: 30px;
-    margin-bottom: 30px;
+    margin: 0 auto 30px auto;
+    max-width: 680px;
     box-sizing: border-box;
-    border: 1px dashed #354052;
+    border: 1px dashed #354052;    
 }
+
 
 /* user input
 -------------------------------------------------------------------- */
@@ -159,7 +197,8 @@ header {
     background-color: #ffffff;
     border: 1px solid #dbdcdd;
     border-radius: 5px;
-    margin-bottom: 30px;
+    margin: 0 auto 30px auto;
+    max-width: 680px;
     box-sizing: border-box;
     padding: 30px;
 }
@@ -217,7 +256,7 @@ textarea::placeholder {
     float: right;
     display: block;
     color: #ffffff;
-    background-color: #5045ba;
+    background-color: #161515;
     width: 120px;
     height: 33px;
     font: 11px "Montserrat Light", sans-serif;
@@ -225,13 +264,13 @@ textarea::placeholder {
     text-transform: uppercase;
     transition: all 0.35s ease 0s;
     border: 1px solid transparent;
-    border-radius: 5px;
+    border-radius: 18px;
     cursor: pointer;
 }
 
 #user-input #submit:hover {
     color: #ffffff;
-    background-color: #161515;
+    background-color: #5045ba;
 }
 
 #cancel {
@@ -256,7 +295,8 @@ textarea::placeholder {
     background-color: #ffffff;
     border: 1px solid #dbdcdd;
     border-radius: 5px;
-    margin-bottom: 30px;
+    margin: 0 auto 30px auto;
+    max-width: 680px;
     box-sizing: border-box;
 }
 
@@ -312,6 +352,8 @@ textarea::placeholder {
 footer {
     color: #8d909f;
     font: 13px "Montserrat Light", sans-serif;
+    margin: 0 auto 30px auto;
+    max-width: 680px;
 }
 
 footer a {
@@ -324,15 +366,6 @@ footer a {
 /* about modal
 -------------------------------------------------------------------- */
 
-.about-modal-wrapper {
-    max-width: 600px;
-    display: flex;
-	  flex-direction: column;
-	  align-items: center;
-    justify-content: center;
-    padding-top: 25px;
-    margin: 0 auto;
-}
 
 .trash-splash {
   max-width: 360px;
@@ -343,7 +376,6 @@ footer a {
     box-sizing: border-box;
     color: #ffffff;
     font: 13px/19px "Montserrat Light", sans-serif;
-	  text-align: left;
 	  margin-bottom: 30px;
 }
 
@@ -353,6 +385,26 @@ footer a {
 
 #about-modal p a {
 	color: #ffffff;
+}
+
+#about-modal-content {
+    display: flex;
+	  flex-direction: column;
+	  align-items: center;
+    justify-content: center;
+    height: 100%;
+    max-width: 515px;
+    margin: auto;
+}
+
+
+#about-modal-content img {
+  width: 150px;
+  margin-bottom: 30px
+}
+
+#about-modal-content a {
+  width: 30px;
 }
 
 
@@ -404,14 +456,14 @@ footer a {
     -webkit-overflow-scrolling: touch; }
   
   .fancybox-bg {
-    background: #1e1e1e;
+    background: #141317;
     opacity: 0;
     transition-duration: inherit;
     transition-property: opacity;
     transition-timing-function: cubic-bezier(0.47, 0, 0.74, 0.71); }
   
   .fancybox-is-open .fancybox-bg {
-    opacity: 0.87;
+    opacity: 1;
     transition-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1); }
   
   .fancybox-infobar,
@@ -524,12 +576,11 @@ footer a {
     position: relative;
     border-width: 0;
     vertical-align: middle;
-    text-align: left;
-    background-color: #18181d;
+    background-color: #141317;
     overflow: auto;
     box-sizing: border-box;
-    padding: 45px;
-    border: 1px dashed #ffffff;
+    width: 100%;
+    height: 100%;
   }
   
   .fancybox-slide .fancybox-image-wrap {
@@ -1113,12 +1164,41 @@ footer a {
 /* media queries
 --------------------------------------------------------------------------*/
 
-@media only screen and (max-width: 660px) {
-    body {
+@media only screen and (max-width: 1236px) {
+  #intro { 
+      	position: relative;
+      background-color: #141317;
+      box-sizing: border-box;
+      height: 100%;
+      max-width: 100%;
+      padding: 0 90px;
+  }
+
+  #intro-innards {
+      padding: 10px;
+  }
+
+  #intro-innards #intro-logo {
+    width: 85px;
+    margin: 0 auto 0px auto;
+  }
+
+  #intro-innards p {
+    display: none;
+  }
+
+    main {
+      margin: 30px 0 0 0;
       padding: 0 20px;
     }
 
+  .about-modal-wrapper {
+    padding: 40px;
+  }
+}
+
+@media only screen and (max-width: 660px) {
     .about-modal-wrapper {
       padding: 40px;
     }
-  }
+}

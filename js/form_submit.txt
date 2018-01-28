@@ -1,0 +1,30 @@
+// form
+/*
+$(document).on("click", "#submit", function () {
+    //$("article").fadeIn("slow");
+    var name = document.getElementById('name').value;
+    var COMMENT = document.getElementById('COMMENT').value;
+
+    
+    if (name == "") { //comment this line out
+        return false;
+    };
+
+
+    if (COMMENT == "") {
+        return false;
+    };
+
+    $.ajax({    //create an ajax request to load_page.php
+        type: "POST",
+        url: "process.php",
+        dataType: "text",   //expect html to be returned  
+        data: { NAME: name, COMMENT: COMMENT },
+        success: function (data) {
+            $("#display").html(data);
+            $("#name").val('');
+            $("#COMMENT").val('');
+        }
+     });
+});
+*/
