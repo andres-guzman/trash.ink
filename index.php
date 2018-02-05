@@ -224,9 +224,9 @@
 
         <div style="display: none;" id="about-modal">
             <div id="about-modal-content">
-               <img src="img/andres.jpg">
-                <p>If you have any recommendations on how to make this website better, please write me at <a href="mailto:andres@camino.bo">andres@camino.bo</a></p>
-                <a href="https://twitter.com/__oily">
+               <img class="about-modal-photo" src="img/moshed_2.gif">
+                <p>If you have any recommendations on how to make this website better, please drop me an email at <a href="mailto:andres@camino.bo">andres@camino.bo</a></p>
+                <!--<a href="https://twitter.com/__oily">
                     <svg version="1.1" id="Twitter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 128 128" style="enable-background:new 0 0 128 128;" xml:space="preserve">
                         <g>
                             <circle id="twitter-back" class="st0" cx="64" cy="64" r="64"/>
@@ -237,7 +237,7 @@
                                 c27,0,41.8-22.4,41.8-41.8c0-0.6,0-1.3,0-1.9C95.4,47.3,97.9,44.7,99.8,41.8z"/>
                         </g>
                     </svg>
-                </a>
+                </a>-->
             </div>         
         </div>
 

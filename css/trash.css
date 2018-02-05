@@ -397,6 +397,9 @@ footer a {
     margin: auto;
 }
 
+.about-modal-photo {
+  clip-path: circle(75px at center);
+}
 
 #about-modal-content img {
   width: 150px;
