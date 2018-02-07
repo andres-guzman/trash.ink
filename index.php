@@ -224,7 +224,7 @@
 
         <div style="display: none;" id="about-modal">
             <div id="about-modal-content">
-               <img class="about-modal-photo" src="img/moshed_2.gif">
+               <img class="about-modal-photo" src="img/index.jpg">
                 <p>If you have any recommendations on how to make this website better, please drop me an email at <a href="mailto:andres@camino.bo">andres@camino.bo</a></p>
                 <!--<a href="https://twitter.com/__oily">
                     <svg version="1.1" id="Twitter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 128 128" style="enable-background:new 0 0 128 128;" xml:space="preserve">
