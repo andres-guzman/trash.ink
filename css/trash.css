@@ -24,17 +24,6 @@
 
 }
 
-
-@font-face {
-  font-family: 'Skinny';
-  src: url('fonts/skinny/skinny-regular-webfont.woff2') format('woff2'),
-       url('fonts/skinny/skinny-regular-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-
 /* css reset
 -------------------------------------------------------------------- */
 
@@ -152,7 +141,7 @@ body {
 #intro-innards p {
   text-align: center;
   color: #ffffff;
-  font: 27px "Skinny", sans-serif;
+  font: 20px "Shadows Into Light", serif;
   margin-bottom: 30px;
 }
 
@@ -397,13 +386,13 @@ footer a {
     margin: auto;
 }
 
-.about-modal-photo {
-  clip-path: circle(75px at center);
+#about-modal-andry {
+  max-width: 140px;
+  margin-bottom: 30px;
 }
 
-#about-modal-content img {
-  width: 150px;
-  margin-bottom: 30px
+.about-modal-star {
+  fill:#FFFFFF;
 }
 
 #about-modal-content a {
