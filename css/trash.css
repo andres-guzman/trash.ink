@@ -141,7 +141,7 @@ body {
 #intro-innards p {
   text-align: center;
   color: #ffffff;
-  font: 20px "Shadows Into Light", serif;
+  font: 18px 'Kalam', cursive;
   margin-bottom: 30px;
 }
 
@@ -364,7 +364,7 @@ footer a {
 #about-modal p {
     box-sizing: border-box;
     color: #ffffff;
-    font: 13px/19px "Montserrat Light", sans-serif;
+    font: 16px 'Kalam', cursive;
 	  margin-bottom: 30px;
 }
 

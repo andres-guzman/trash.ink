@@ -10,8 +10,8 @@
         <link rel="apple-touch-icon" href="icon.png">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <link rel="icon" type="image/png" href="favicon.png">
-        <link rel="stylesheet" href="css/trash.css">
-        <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+        <link rel="stylesheet" href="css/trash.css">        
+        <link href="https://fonts.googleapis.com/css?family=Kalam:300" rel="stylesheet">
     </head>
     <body>
         <a id="start"></a>
