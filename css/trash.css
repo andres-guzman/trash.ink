@@ -101,13 +101,34 @@ body {
 
 @keyframes animatedBg {
 	from {
-    background-position: 0 0;
+        background-position: 0 0;
   }
 
 	to {
-    background-position: 0 100%; 
+        background-position: 0 100%; 
   }
 }
+
+@keyframes introGrow {
+	from {
+        width: 0%;
+  }
+
+	to {
+        width: 50%; 
+  }
+}
+
+@keyframes fadeIn {
+	from {
+        opacity: 0;
+  }
+
+	to {
+        opacity: 1;
+  }
+}
+
 
 #intro { 
   background-image: url(../img/bg_pattern.svg);
@@ -123,11 +144,15 @@ body {
   justify-content: center;
   top: 0;
   left: 0;
-  animation: animatedBg 60s linear infinite;
+  animation: animatedBg 60s linear infinite, introGrow 1s ease-in-out;
 }
 
 #intro-innards {
   width: 400px;
+  opacity: 0;
+    animation: fadeIn 0.75s ease-in 1;
+    animation-fill-mode: forwards;
+    animation-delay: 0.75s;
 }
 
 #intro-innards #intro-logo {
@@ -174,7 +199,12 @@ main {
     margin: 30px auto 30px 50%;
     box-sizing: border-box;
     padding: 0 60px 0 60px;
+    opacity: 0;
+    animation: fadeIn 0.75s ease-in 1;
+    animation-fill-mode: forwards;
+    animation-delay: 0.75s;
 }
+
 
 /* header
 -------------------------------------------------------------------- */
