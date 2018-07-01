@@ -121,7 +121,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 60px;
   top: 0;
   left: 0;
   animation: animatedBg 60s linear infinite;
@@ -301,13 +300,12 @@ textarea::placeholder {
 }
 
 #user-comments > h2 {
-    padding: 30px;
+    padding: 30px 60px;
     margin-bottom: 30px;
-    border-bottom: 1px solid #e3e4e5;
 }
 
 #display {
-    padding: 0 30px;
+    padding: 0 60px;
 }
 
 #display .comment-window:last-of-type {
@@ -318,7 +316,6 @@ textarea::placeholder {
 .comment-window {
     padding-bottom: 30px;
     margin-bottom: 30px;
-    border-bottom: 1px solid #e3e4e5;
 }
 
 .comment-postedby {
