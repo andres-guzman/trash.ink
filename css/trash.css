@@ -260,7 +260,7 @@ h2 {
 
 #user-input #COMMENT {
     width: 100%;
-    height: 100px;
+    height: 75px;
     padding: 15px;
     color: #161515;
     font: 13px "Montserrat Light", sans-serif;
@@ -274,7 +274,7 @@ h2 {
 }
 
 #user-input #COMMENT:focus {
-    background-color: #ffffff;
+    height: 100px;
 }
 
 textarea::placeholder {
