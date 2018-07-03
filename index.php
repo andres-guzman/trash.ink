@@ -189,11 +189,9 @@
                         echo '<article class="comment-window">
                             ';
                             echo '<div class="comment-postedby">Posted by: ' . $row['PERSON'].'</div>';
-                            echo '<div class="comment-body">
-                                ';
+                            echo '<div class="comment-body">';
                                 echo  $row['COMMENT'];
-                                echo '
-                            </div>';
+                                echo '</div>';
                             echo '<div class="comment-date">
                                 ';
                                 echo 'Date: ' . $row['DATEPOSTED'];

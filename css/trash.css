@@ -307,7 +307,7 @@ textarea::placeholder {
     color: #8d909f;
     display: block;
     width: 54px;
-    font: 13px/38px "Montserrat Light", sans-serif;
+    font: 13px/36px "Montserrat Light", sans-serif;
     text-decoration: none;
     text-align: center;
 }
@@ -329,7 +329,7 @@ textarea::placeholder {
     background-color: #ffffff;
     border-radius: 7px;
     box-sizing: border-box;
-    padding: 35px 60px 30px 60px;
+    padding: 35px 60px 1px 60px;
     box-shadow: 0 0 10px rgba(98, 103, 109, 0.15);
 }
 
@@ -346,9 +346,9 @@ textarea::placeholder {
 .comment-window:before {
     content: "";
     position: absolute;
-    top: 13px;
+    top: 0;
     left: -32px;
-    height: 90%;
+    height: 100%;
     width: 7px;
     border-radius: 4px;
     background: rgba(141, 144, 159, 0.35);
