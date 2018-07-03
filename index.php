@@ -158,7 +158,7 @@
                     </svg>
                 </a>
                 
-                <p>This is a simple platform for you to write something anonymously, anything goes. Just write something, hit 'PUBLISH' and it is live.</p>
+                <p>This is a simple platform for you to write something anonymously. Anything goes. Just write something, hit 'PUBLISH' and it is live.</p>
                 <p>I don't keep track of you in any way — that's great! This silliness was handcrafted by <a href="https://twitter.com/__oily">some guy.</a></p>
             </div>
         </div>
@@ -169,14 +169,13 @@
             </section>
 
             <section id="user-input">
-                <h2>Write anything and publish it online:</h2>
-                <div id="counter-wrapper">
-                    Characters remaining
-                    <span id="counter"></span>
-                </div>
                 <input rows="6" id="name" name="name" placeholder="Name" value="" maxlenght="130" type="text">
                 <textarea rows="11" name="comment" id="COMMENT" placeholder="Write..."><?php echo htmlspecialchars($_POST['COMMENT']);?></textarea>
-                <button id="submit" type="submit">Publish</button><a id="cancel" href="../">Cancel</a>
+                <button id="submit" type="submit">Publish!</button><a id="cancel" href="../">Cancel</a>
+                <div id="counter-wrapper">
+                    Characters remaining... 
+                    <span id="counter"></span>
+                </div>
             </section>
 
             <section id="user-comments">
