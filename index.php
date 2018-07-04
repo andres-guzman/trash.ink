@@ -159,7 +159,7 @@
                 </a>
                 
                 <p>This is a simple platform for you to write something anonymously. Anything goes. Just write something, hit 'PUBLISH' and it is live.</p>
-                <p>I don't keep track of you in any way — that's great! This silliness was handcrafted by <a href="https://twitter.com/__oily">some guy.</a></p>
+                <p>Nobody keeps track of you in any way — that's great! This silliness was handcrafted by <a href="https://twitter.com/__oily">some guy.</a></p>
             </div>
         </div>
 
@@ -188,7 +188,7 @@
                         
                         echo '<article class="comment-window">
                             ';
-                            echo '<div class="comment-postedby">Posted by: ' . $row['PERSON'].'</div>';
+                            //echo '<div class="comment-postedby">Posted by: ' . $row['PERSON'].'</div>';
                             echo '<div class="comment-body">';
                                 echo  $row['COMMENT'];
                                 echo '</div>';
