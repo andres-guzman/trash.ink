@@ -336,7 +336,7 @@ textarea::placeholder {
 .comment-window {
     margin-bottom: 50px;
     position: relative;
-    padding: 5px 0;
+    padding-bottom: 2px;
 }
 
 .comment-window:before {
