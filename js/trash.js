@@ -51,7 +51,6 @@ $('a[href*="#"]')
     }
 });
 
-
 // textarea maxlenght
 
 $('textarea').keypress(function (e) {
