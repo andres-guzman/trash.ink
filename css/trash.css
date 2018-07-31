@@ -131,9 +131,9 @@ body {
 
 
 #intro { 
-  background-image: url(../img/grid.svg);
+  background-image: url(../img/bg_pattern.svg);
   background-color: rgba(200, 19, 53, 1);
-  background-size: 56%;
+  background-size: 16%;
   background-position: 0 0;
   width: 50%;
   box-sizing: border-box;
