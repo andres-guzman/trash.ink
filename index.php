@@ -165,7 +165,7 @@
 
         <main>
             <section id="notice">
-                <p>As noticed by the last person who posted a comment, this simple platform to post anonymous comments is vulnerable to SQL injection attacks that could land me in a world of hurt. What a noob, right? Therefore I have decided to disable this entirely until I (a simple front-end developer) find a way to fix it. Thank you for visiting and thank you x100 to the few people who actually used this. I'll bring this thing back if it's the last thing I do. Peace!</p>
+                <p>As noticed by the last person who posted a comment, this simple website is vulnerable to SQL injection attacks that could land me in a world of hurt. What a noob, right? Therefore I have decided to disable this entirely until I (a simple front-end developer) find a way to fix it. Thank you for visiting and thank you x100 to the few people who actually used this. I'll bring this thing back if it's the last thing I do. Peace!</p>
             </section>
 
             <section id="user-input">
