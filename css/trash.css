@@ -7,12 +7,12 @@
 -------------------------------------------------------------------- */
 
 @font-face {
-  font-family: 'Montserrat Bold Italic';
-  src: url('fonts/montserratbold/montserrat-bolditalic-webfont.woff2') format('woff2'),
-       url('fonts/montserratbold/montserrat-bolditalic-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
+    font-family: 'Montserrat Bold Italic';
+    src: url('fonts/montserratbold/montserrat-bolditalic-webfont.woff2') format('woff2'),
+         url('fonts/montserratbold/montserrat-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -21,7 +21,7 @@
          url('fonts/montserratlight/montserrat-light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
+    font-display: swap;
 }
 
 /* css reset
