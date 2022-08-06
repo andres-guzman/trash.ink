@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>grid test</title>
+    <meta name="description" content="What is trash.ink all about? Find out here.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            margin: 0;
+            padding: 35px;
+        }
+
+        ol {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-auto-rows: minmax(450px, auto);
+            grid-gap: 35px;
+
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            list-style-type: none;
+            background-color: red;
+            padding: 35px;
+
+            box-sizing: border-box;
+
+            font: 22px Arial;
+            overflow: hidden;
+        }
+        </style>
+</head>
+
+<body>
+    <ol>
+        <li>hello there</li>
+        <li>daddy's little girl ain't a girl no more daddy's little girl ain't a girl no more daddy's little girl ain't a girl no more daddy's little girl ain't a girl no more daddy's little girl ain't a girl no more daddy's little girl ain't a girl no more daddy's little girl ain</li>
+        <li>hello there</li>
+        <li>hello there</li>
+        <li>hello there</li>
+        <li>hello there</li>
+        <li>hello there</li>
+        <li>hello there</li>
+        <li>hello there</li>
+        <li>hello there</li>
+        <li>hello there</li>
+    </ol>
+</body>
+</html>

@@ -1,0 +1,354 @@
+/*
+ * trash.css
+ * By: Andres Guzman
+ * andres@skyyym.com
+ */
+
+/* ==========================================================================
+   fonts
+   ========================================================================== */
+
+@font-face {
+  font-family: 'Kiro';
+      src: url('fonts/kiro/kiro_regular-webfont.woff2') format('woff2'),
+           url('fonts/kiro/kiro_regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Proxima';
+  src: url('fonts/proxima/proxima_nova_alt_semibold-webfont.woff2') format('woff2'),
+       url('fonts/proxima/proxima_nova_alt_semibold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ==========================================================================
+   a little bit of CSS normalize
+   ========================================================================== */
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+::-moz-selection {
+  background: #6a6de9;
+  color: #000000;
+  text-shadow: none;
+}
+
+::selection {
+  background: #6a6de9;
+  color: #000000;
+  text-shadow: none;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+a {
+  background-color: transparent;
+}
+
+audio, canvas, iframe, img, svg, video {
+  vertical-align: middle;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: none;
+  overflow: auto;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+img {
+  border-style: none;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+button, input, optgroup, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+textarea {
+  overflow: auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #161619;
+}
+
+/* ==========================================================================
+   intro (left section)
+   ========================================================================== */
+
+#intro {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 47%;
+  height: 100%;
+  padding: 75px 80px 75px 335px;
+  box-sizing: border-box;
+  transition: all .55s ease 0s;
+}
+
+#logo {
+  display: block;
+  width: 275px;
+  margin-bottom: 50px;
+}
+
+.logo-fill {
+  fill: #6A6DE9;
+  transition: fill .35s ease 0s;
+}
+
+#logo:hover .logo-fill {
+  fill: #ffffff;
+}
+
+.intro-anon {
+  color: #ffffff;
+  font: 22px "Kiro", Arial, Helvetica, sans-serif;
+  width: 438px;
+  margin-bottom: 50px;
+  padding-left: 45px;
+  position: relative;
+}
+
+.intro-anon::before {
+  content: url("data:image/svg+xml;base64, PHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNDczIDQ3MyI+PHN0eWxlPi5zdDF7ZmlsbDojNmE2ZGU5fTwvc3R5bGU+PHBhdGggZD0iTTM5NS4xIDc3LjhDMzUyLjcgMzUuMyAyOTYuNCAxMiAyMzYuNCAxMlMxMjAuMSAzNS4zIDc3LjcgNzcuOGMtODIgODItODcuNyAyMTMuMy0xNC4xIDMwMS45LTcuMiAxNC41LTE4LjggMzEuNC0zNiAzOS45LTguMyA0LjEtMTIuOSAxMi45LTExLjUgMjJzOC40IDE2LjIgMTcuNiAxNy43YzQuMy43IDEwLjMgMS4zIDE3LjggMS4zIDE5LjggMCA0OS4xLTQuNyA3OS0yNi4yIDMzLjMgMTcuOSA2OS44IDI2LjcgMTA1LjkgMjYuNyA1OC4xIDAgMTE1LjYtMjIuNSAxNTguOS02NS44IDQyLjQtNDIuNCA2NS44LTk4LjcgNjUuOC0xNTguN3MtMjMuNS0xMTYuNC02Ni0xNTguOHptLTEwLjYgMzA2LjhjLTY3LjUgNjcuNS0xNzIgODAuOS0yNTQuMiAzMi42LTUuNC0zLjItMTIuMS0yLjItMTYuNCAyLjEtLjQuMi0uOC41LTEuMS44LTI3LjEgMjEtNTMuNyAyNS40LTcxLjMgMjUuNGgtLjFjMjAuMy0xNC44IDMzLjEtMzYuOCA0MC42LTUzLjkgMS4yLTIuOSAxLjQtNS45LjctOC43LS4zLTIuNy0xLjQtNS40LTMuMy03LjZDNi4yIDI5Mi42IDEwIDE2Ni42IDg4LjIgODguNGM4MS43LTgxLjcgMjE0LjYtODEuNyAyOTYuMiAwIDgxLjggODEuNyA4MS44IDIxNC41LjEgMjk2LjJ6IiBmaWxsPSIjNmE2ZGU5IiBzdHJva2U9IiM2YTZkZTkiIHN0cm9rZS13aWR0aD0iMTIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIvPjxjaXJjbGUgY2xhc3M9InN0MSIgY3g9IjIzNi40IiBjeT0iMjM2LjUiIHI9IjE2LjYiLz48Y2lyY2xlIGNsYXNzPSJzdDEiIGN4PSIzMjIiIGN5PSIyMzYuNSIgcj0iMTYuNiIvPjxjaXJjbGUgY2xhc3M9InN0MSIgY3g9IjE1MC44IiBjeT0iMjM2LjUiIHI9IjE2LjYiLz48L3N2Zz4=");
+  width: 30px;
+  height: 30px;
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+
+.intro-privacy {
+  color: #ffffff;
+  font: 16px "Kiro", Arial, Helvetica, sans-serif;
+  width: 438px;
+  margin-bottom: 50px;
+  padding-left: 45px;
+  position: relative;
+}
+
+.intro-privacy::before {
+  content: url("data:image/svg+xml;base64, PHN2ZyBpZD0iQ2FwYV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MiA0MiI+PHN0eWxlPi5zdDB7ZmlsbDojNmE2ZGU5O3N0cm9rZTojNmE2ZGU5O3N0cm9rZS1taXRlcmxpbWl0OjEwfTwvc3R5bGU+PHBhdGggY2xhc3M9InN0MCIgZD0iTTIxIDQwLjhDMTAuMSA0MC44IDEuMiAzMS45IDEuMiAyMVMxMC4xIDEuMiAyMSAxLjIgNDAuOCAxMC4xIDQwLjggMjEgMzEuOSA0MC44IDIxIDQwLjh6bTAtMzguNEMxMC44IDIuNCAyLjQgMTAuOCAyLjQgMjFTMTAuOCAzOS42IDIxIDM5LjYgMzkuNiAzMS4yIDM5LjYgMjEgMzEuMiAyLjQgMjEgMi40eiIvPjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0yMSAzNy41Yy0zLjQgMC02LjctMS4xLTkuNS0zLjEtLjEtLjEtLjItLjMtLjItLjVzLjEtLjMuMy0uNGM0LjEtMS41IDQuOC0yLjggNC44LTUuMiAwLS42LS4xLS44LS40LTEuMi0uMy0uNS0uOC0xLjItMS4xLTIuOSAwLS4zLS4xLS4zLS4zLS40LS42LS4zLTEuMi0uNy0xLjMtMi42IDAtLjkuMy0xLjQuNi0xLjctLjEtLjMtLjItLjktLjItMS41LS41LTIuOC0uNS02LjIgMy40LTcuOCAzLjQtMS40IDYuMS0uNiA3IC4zLjYgMCAyLjIuMiAzLjIgMS40IDEuNyAxLjkgMS4xIDYuNCAxIDcuNi4zLjMuNi44LjYgMS43LS4xIDItLjcgMi40LTEuMyAyLjctLjIuMS0uMy4xLS4zLjQtLjMgMS44LS44IDIuNC0xLjEgMi45LS4zLjQtLjQuNi0uNCAxLjIgMCAyLjQuNyAzLjYgNC44IDUuMi4yLjEuMy4yLjMuNHMtLjEuNC0uMi41Yy0zIDEuOS02LjMgMy05LjcgM3ptLTguMi0zLjNjMi41IDEuNSA1LjMgMi4zIDguMiAyLjNzNS43LS44IDguMi0yLjNjLTMuNS0xLjQtNC42LTIuOS00LjYtNS44IDAtLjkuMy0xLjMuNi0xLjguMy0uNC43LTEgMS0yLjYuMS0uOC42LTEgLjktMS4xcy42LS4zLjctMS44YzAtLjgtLjMtMS0uNC0xLS4yLS4xLS4zLS4zLS4zLS41LjItMS4zLjctNS41LS43LTctLjktMS4xLTIuNC0xLjEtMi42LTEuMWgtLjFjLS4xIDAtLjQtLjEtLjQtLjMtLjMtLjUtMi42LTEuNC01LjktLjEtMy4yIDEuMy0zLjIgNC4xLTIuOCA2LjcuMSAxIC4zIDEuOC4zIDEuOCAwIC4yLS4xLjQtLjMuNSAwIDAtLjMuMi0uMyAxIC4xIDEuNS40IDEuNi43IDEuOC4zLjEuNy4zLjkgMS4xLjMgMS42LjcgMi4xIDEgMi42LjMuNC42LjguNiAxLjgtLjEgMi45LTEuMiA0LjMtNC43IDUuOHoiLz48cGF0aCBkPSJNMTkuOSAyMC4yYzAtMS45IDIuNS0yLjEgMi41LTMuNCAwLS42LS41LTEuMS0xLjUtMS4xcy0xLjYuNC0yLjEgMS4xbC0xLTEuMmMuOC0xIDItMS41IDMuNC0xLjUgMS45IDAgMy4xIDEgMy4xIDIuNCAwIDIuMy0yLjcgMi41LTIuNyAzLjggMCAuMi4xLjUuMy43bC0xLjQuNWMtLjQtLjMtLjYtLjgtLjYtMS4zem0wIDMuNWMwLS42LjUtMS4xIDEuMS0xLjFzMS4xLjUgMS4xIDEuMS0uNSAxLjEtMS4xIDEuMS0xLjEtLjYtMS4xLTEuMXoiIGZpbGw9IiM2YTZkZTkiLz48L3N2Zz4=");
+  width: 30px;
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 0;
+}
+
+/* ==========================================================================
+   main
+   ========================================================================== */
+
+main {
+  display: block;
+  position: relative;
+  padding-top: 75px;
+  margin: 0 auto 30px 47%;
+  transition: all .55s ease 0s;
+}
+
+#trashy {
+  max-width: 680px;
+  margin: 0 0 75px 0;
+  transition: all .55s ease 0s;
+}
+
+#user-input {
+  padding-bottom: 45px;
+  margin-bottom: 45px;
+  border-bottom: 1px solid #2c2e32;
+}
+
+#user-input:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.user-input-write {
+  display: block;
+  color: #dcddde;
+  font: 14px "Proxima", Arial, Helvetica, sans-serif;
+  margin-bottom: 15px;
+}
+
+/* ==========================================================================
+   text area
+   ========================================================================== */
+
+textarea#comment {
+  color: #ffffff;
+  background-color: #161619;
+  border-radius: 6px;
+  border: 2px solid #6a6de9;
+  padding: 15px;
+  font: 16px "Proxima", Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 120px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  transition: border-color .35s ease 0s;
+}
+
+textarea#comment:focus {
+  border-color: #ffffff;
+}
+
+
+/* ==========================================================================
+   publish button
+   ========================================================================== */
+
+#pushbutton {
+  color: #000000;
+  font: 14px "Proxima", Arial, Helvetica, sans-serif;
+  border-radius: 18px;
+  background-color: #ffffff;
+  width: 134px;
+  height: 35px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  float: right;
+}
+
+/* ==========================================================================
+   comment_div
+   ========================================================================== */
+
+.comment_div {
+  background-color: #121315;
+  padding: 25px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+
+.comment {
+  color: #dcddde;
+  font: 16px/22px "Proxima", Arial, Helvetica, sans-serif;
+  margin-bottom: 2px;
+  white-space: pre-line;
+  outline: none;
+  overflow-wrap: break-word;
+}
+
+.time {
+  color: rgba(106, 109, 233, 0.5);
+  font: 13px "Proxima", Arial, Helvetica, sans-serif;
+}
+
+/* ==========================================================================
+   footer
+   ========================================================================== */
+
+footer {
+  color: #87909c;
+  font: 13px "Proxima", Arial, Helvetica, sans-serif;
+}
+
+footer a {
+  color: #87909c;
+  float: right;
+}
+
+/* ==========================================================================
+   media queries
+   ========================================================================== */
+
+@media screen and (max-width: 1880px) {
+  #intro {
+    padding: 45px;
+  }
+  main {
+    padding: 50px;
+  }
+  #trashy {
+    margin: 0 auto 45px auto;
+  }
+}
+
+@media screen and (max-width: 1310px) {
+  #intro {
+    position: relative;
+    width: 100%;
+  }
+  #logo {
+    margin: 0 auto 25px auto;
+    float: none;
+  }
+  .intro-anon {
+    margin: 0 auto 25px auto;
+    float: none;
+    text-align: left;
+  }
+  .intro-privacy {
+    margin: 0 auto 25px auto;
+    float: none;
+    text-align: left;
+  }
+  main {
+    margin: 0 auto 30px auto;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  #intro {
+    padding: 25px 20px 0 20px;
+  }
+  main {
+    padding: 0 20px;
+  }
+
+  .intro-anon {
+    font-size: 22px;
+  }
+
+  .intro-anon,
+  .intro-privacy {
+    padding-left: 0;
+    width: auto;
+  }
+  .intro-anon::before, .intro-privacy::before {
+    content: "";
+  }
+}

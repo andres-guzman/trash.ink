@@ -1,0 +1,336 @@
+/*
+ * trash.css
+ * By: Andres Guzman
+ * andres@skyyym.com
+ */
+
+/* ==========================================================================
+   fonts
+   ========================================================================== */
+
+@font-face {
+  font-family: 'Proxima Regular';
+  src: url('fonts/proximaregular/proxima_nova_alt_regular-webfont.woff2') format('woff2'), url('fonts/proximaregular/proxima_nova_alt_regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Proxima Bold';
+  src: url('fonts/proximabold/proxima_nova_alt_bold-webfont.woff2') format('woff2'), url('fonts/proximabold/proxima_nova_alt_bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ==========================================================================
+   a little bit of CSS normalize
+   ========================================================================== */
+
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  margin: 0;
+  padding: 0;
+}
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+a {
+  background-color: transparent;
+}
+
+audio, canvas, iframe, img, svg, video {
+  vertical-align: middle;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: none;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+img {
+  border-style: none;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+button, input, optgroup, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+textarea {
+  overflow: auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #33353b;
+}
+
+/* ==========================================================================
+   intro (left section)
+   ========================================================================== */
+
+#intro {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #2f3136;
+  padding: 95px;
+  box-sizing: border-box;
+  transition: all .55s ease 0s;
+}
+
+#logo {
+  display: block;
+  width: 275px;
+  margin-bottom: 45px;
+}
+
+.intro-anon {
+  color: #87909c;
+  font: 14px/20px "Proxima Regular", Arial, Helvetica, sans-serif;
+  width: 407px;
+  margin-bottom: 45px;
+  padding-left: 45px;
+  position: relative;
+}
+
+.intro-anon::before {
+  content: url(../img/chat.svg);
+  width: 30px;
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+
+.intro-privacy {
+  color: #87909c;
+  font: 14px/20px "Proxima Regular", Arial, Helvetica, sans-serif;
+  width: 407px;
+  margin-bottom: 45px;
+  padding-left: 45px;
+  position: relative;
+}
+
+.intro-privacy::before {
+  content: url(../img/man.svg);
+  width: 30px;
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+
+.intro-anon span, .intro-privacy span {
+  color: #acb6c3;
+  font-family: "Proxima Bold";
+}
+
+/* ==========================================================================
+   main
+   ========================================================================== */
+
+main {
+  display: block;
+  position: relative;
+  margin: 30px auto 30px 50%;
+  transition: all .55s ease 0s;
+}
+
+#trashy {
+  max-width: 640px;
+  margin: 95px auto 95px auto;
+  transition: all .55s ease 0s;
+}
+
+#user-input {
+  padding-bottom: 35px;
+  margin-bottom: 35px;
+  border-bottom: 1px solid #3e4147;
+}
+
+#user-input:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.user-input-write {
+  color: #dcddde;
+  font: 14px "Proxima Regular", Arial, Helvetica, sans-serif;
+  margin-bottom: 15px;
+}
+
+/* ==========================================================================
+   text area
+   ========================================================================== */
+
+textarea#comment {
+  color: #dcddde;
+  background-color: #3f4349;
+  border-radius: 6px;
+  padding: 15px;
+  font: 14px "Proxima Regular", Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 90px;
+  border: none;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+/* ==========================================================================
+   publish button
+   ========================================================================== */
+
+#pushbutton {
+  color: #ffffff;
+  font: 14px "Proxima Bold", Arial, Helvetica, sans-serif;
+  border-radius: 18px;
+  background-color: #30b365;
+  width: 134px;
+  height: 35px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  float: right;
+}
+
+/* ==========================================================================
+   comment_div
+   ========================================================================== */
+
+.comment_div {
+  background-color: #2f3036;
+  padding: 25px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  overflow-wrap: break-word;
+}
+
+.comment {
+  color: #dcddde;
+  font: 14px/20px "Proxima Regular", Arial, Helvetica, sans-serif;
+  margin-bottom: 2px;
+  white-space: pre-line;
+  outline: none;
+}
+
+.time {
+  color: rgba(106, 109, 233, 0.5);
+  font: 14px "Proxima Regular", Arial, Helvetica, sans-serif;
+}
+
+/* ==========================================================================
+   footer
+   ========================================================================== */
+
+footer {
+  color: #87909c;
+  font: 14px "Proxima Regular", Arial, Helvetica, sans-serif;
+}
+
+footer a {
+  color: #87909c;
+  float: right;
+}
+
+/* ==========================================================================
+   media queries
+   ========================================================================== */
+
+@media screen and (max-width: 1416px) {
+  #intro {
+    padding: 45px;
+  }
+  main {
+    padding: 0 30px;
+  }
+  #trashy {
+    margin: 45px auto;
+  }
+}
+
+@media screen and (max-width: 1110px) {
+  #intro {
+    position: relative;
+    width: 100%;
+  }
+
+  #logo {
+    margin: 0 auto 25px auto;
+  }
+
+  .intro-anon {
+    margin: 0 auto 25px auto;
+  }
+
+  .intro-privacy {
+    margin: 0 auto 0 auto;
+  }
+
+  main {
+    margin: 30px auto 30px auto;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  #intro {
+    padding: 20px;
+  }
+
+  main {
+    padding: 0 20px;
+  }
+
+  .intro-anon,
+  .intro-privacy {
+    padding-left: 0;
+    width: auto;
+  }
+  
+  .intro-anon::before,
+  .intro-privacy::before {
+    content: "";
+  }
+}
