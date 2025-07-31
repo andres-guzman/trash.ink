@@ -52,10 +52,6 @@
             <ol reversed id="all_comments">
                 <?php                
                     error_reporting(E_ERROR | E_WARNING | E_PARSE | E_NOTICE);
-                    $host="internal-db.s228714.gridserver.com";
-                    $username="db228714";
-                    $password="o!taI{K^f48";
-                    $databasename="db228714_comments";
                 
                     $connect=mysql_connect($host,$username,$password);
                     $db=mysql_select_db($databasename);
