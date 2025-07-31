@@ -85,17 +85,15 @@
         </footer>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
     <script src="js/main.js"></script>
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HCLL005JY6"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
-        gtag('config', 'G-HCLL005JY6');
+        gtag('config', '');
     </script>
 </body>
 </html>
